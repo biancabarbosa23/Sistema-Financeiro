@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E44F1DCA-2CDA-41B0-9DCF-5806EA4EBA46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TrabalhoEngenhariaFinanceiro</RootNamespace>
+    <AssemblyName>TrabalhoEngenhariaFinanceiro</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoFinanceiroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoFinanceiroDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaCliente.Designer.cs">
+      <DependentUpon>BuscaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaFornecedor.Designer.cs">
+      <DependentUpon>BuscaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroTituloPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroTituloPagar.Designer.cs">
+      <DependentUpon>CadastroTituloPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroTituloReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroTituloReceber.Designer.cs">
+      <DependentUpon>CadastroTituloReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="ConsultaComplexa.cs" />
+    <Compile Include="ConsultarTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarTitulo.Designer.cs">
+      <DependentUpon>ConsultarTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarBaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarBaixa.Designer.cs">
+      <DependentUpon>DarBaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarBaixaPagar.cs" />
+    <Compile Include="DarBaixaReceber.cs" />
+    <Compile Include="Fornecedor.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovoTipo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo.Designer.cs">
+      <DependentUpon>Tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TituloPagar.cs" />
+    <Compile Include="TituloReceber.cs" />
+    <Compile Include="ValoresBaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValoresBaixa.Designer.cs">
+      <DependentUpon>ValoresBaixa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuscaCliente.resx">
+      <DependentUpon>BuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaFornecedor.resx">
+      <DependentUpon>BuscaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroTituloPagar.resx">
+      <DependentUpon>CadastroTituloPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroTituloReceber.resx">
+      <DependentUpon>CadastroTituloReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarTitulo.resx">
+      <DependentUpon>ConsultarTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarBaixa.resx">
+      <DependentUpon>DarBaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tipo.resx">
+      <DependentUpon>Tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValoresBaixa.resx">
+      <DependentUpon>ValoresBaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BancoFinanceiroDataSet.xsc">
+      <DependentUpon>BancoFinanceiroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet.xss">
+      <DependentUpon>BancoFinanceiroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet1.xsc">
+      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet1.xss">
+      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet2.xsc">
+      <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet2.xss">
+      <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet3.xsc">
+      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet3.xss">
+      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet4.xsc">
+      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet4.xss">
+      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet5.xsc">
+      <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet5.xss">
+      <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet6.xsc">
+      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet6.xss">
+      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet7.xsc">
+      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BancoFinanceiroDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoFinanceiroDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoFinanceiroDataSet7.xss">
+      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BancoFinanceiro.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BancoFinanceiro_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BancoFinanceiro.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
