@@ -69,40 +69,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoFinanceiroDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BancoFinanceiroDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BancoFinanceiroDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BancoFinanceiroDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BancoFinanceiroDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BancoFinanceiroDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BancoFinanceiroDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BancoFinanceiroDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
     </Compile>
     <Compile Include="BuscaCliente.cs">
       <SubType>Form</SubType>
@@ -217,17 +192,6 @@
     <None Include="BancoFinanceiroDataSet.xss">
       <DependentUpon>BancoFinanceiroDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BancoFinanceiroDataSet1.xsc">
-      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BancoFinanceiroDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BancoFinanceiroDataSet1.xss">
-      <DependentUpon>BancoFinanceiroDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="BancoFinanceiroDataSet2.xsc">
       <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
     </None>
@@ -239,28 +203,6 @@
     <None Include="BancoFinanceiroDataSet2.xss">
       <DependentUpon>BancoFinanceiroDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="BancoFinanceiroDataSet3.xsc">
-      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BancoFinanceiroDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BancoFinanceiroDataSet3.xss">
-      <DependentUpon>BancoFinanceiroDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet4.xsc">
-      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BancoFinanceiroDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BancoFinanceiroDataSet4.xss">
-      <DependentUpon>BancoFinanceiroDataSet4.xsd</DependentUpon>
-    </None>
     <None Include="BancoFinanceiroDataSet5.xsc">
       <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
     </None>
@@ -271,28 +213,6 @@
     </None>
     <None Include="BancoFinanceiroDataSet5.xss">
       <DependentUpon>BancoFinanceiroDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet6.xsc">
-      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BancoFinanceiroDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BancoFinanceiroDataSet6.xss">
-      <DependentUpon>BancoFinanceiroDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet7.xsc">
-      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="BancoFinanceiroDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BancoFinanceiroDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BancoFinanceiroDataSet7.xss">
-      <DependentUpon>BancoFinanceiroDataSet7.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

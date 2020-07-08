@@ -32,13 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_NomeForn = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idForn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bancoFinanceiroDataSet2 = new TrabalhoEngenhariaFinanceiro.BancoFinanceiroDataSet2();
             this.btn_Sair = new System.Windows.Forms.Button();
             this.fornecedorTableAdapter = new TrabalhoEngenhariaFinanceiro.BancoFinanceiroDataSet2TableAdapters.FornecedorTableAdapter();
             this.btn_Selecionar = new System.Windows.Forms.Button();
-            this.idForn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoFinanceiroDataSet2)).BeginInit();
@@ -80,6 +80,21 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // idForn
+            // 
+            this.idForn.DataPropertyName = "IdForn";
+            this.idForn.HeaderText = "IdForn";
+            this.idForn.Name = "idForn";
+            this.idForn.ReadOnly = true;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "nome";
+            this.nome.Name = "nome";
+            this.nome.ReadOnly = true;
+            this.nome.Width = 200;
+            // 
             // fornecedorBindingSource
             // 
             this.fornecedorBindingSource.DataMember = "Fornecedor";
@@ -113,21 +128,6 @@
             this.btn_Selecionar.Text = "&Selecionar";
             this.btn_Selecionar.UseVisualStyleBackColor = true;
             this.btn_Selecionar.Click += new System.EventHandler(this.btn_Selecionar_Click);
-            // 
-            // idForn
-            // 
-            this.idForn.DataPropertyName = "IdForn";
-            this.idForn.HeaderText = "IdForn";
-            this.idForn.Name = "idForn";
-            this.idForn.ReadOnly = true;
-            // 
-            // nome
-            // 
-            this.nome.DataPropertyName = "nome";
-            this.nome.HeaderText = "nome";
-            this.nome.Name = "nome";
-            this.nome.ReadOnly = true;
-            this.nome.Width = 200;
             // 
             // BuscaFornecedor
             // 
